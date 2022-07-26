@@ -20,16 +20,16 @@ the label and the input tags. I feel these selectors might be conflicting?-->
     <!--Form-->
     <form id='survey-form'>
       <!--Name Label-->
-      <label id='name-label'>Name
+      <label for="name">Name
         <input id='name' type="text" name='first-name' placeholder='Enter your name'required/>
       </label>
       <!--Email Label-->
-      <label id='email-label'>Email <input id='email' type="email" name='email' placeholder='Enter your email' pattern='[a-z]{0-9}'required/></label>
+      <label for="name">Email <input id='email' type="email" name='email' placeholder='Enter your email' pattern='[a-z]{0-9}'required/></label>
       <!--Age Label-->
-      <label id='number-label'>Age (optional) <input id='number' type='number' name='age' placeholder='Enter your age' pattern='{0-9}' min='16' max='120'/></label>
+      <label for="name"'>Age (optional) <input id='number' type='number' name='age' placeholder='Enter your age' pattern='{0-9}' min='16' max='120'/></label>
       
       <!--Dropdown Menu-->
-      <p id="dropdown-title">  What is your favourite feature of freeCodeCamp?</p>
+      <label id="dropdown-title">  What is your favourite feature of freeCodeCamp?
       <select id='dropdown'>
           <option>Select an option</option>
           <option>Projects</option>

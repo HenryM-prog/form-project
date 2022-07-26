@@ -5,9 +5,19 @@
     <link rel=stylesheet href='/styles.css'>
   </head>
   <body>
+
+    <!--Page headings-->
     <h1 id='title'>freeCodeCamp Survey Form</h1>
-    <h3 id='description'>Thank you for taking the time to help us improve this platform.</h3>
-<!--Form-->
+    <h2 id='description'>Thank you for taking the time to help us improve this platform.</h2>
+
+  
+<!--The HTML below is where I think the issue is, I started this project on myFreeCodeCamp and at the time they wanted me to have id selectors for both
+the label and the input tags. I feel these selectors might be conflicting?-->
+  
+    <!--Flex Wrapper
+  <div id="wrapper">-->
+
+    <!--Form-->
     <form id='survey-form'>
       <!--Name Label-->
       <label id='name-label'>Name
@@ -17,8 +27,9 @@
       <label id='email-label'>Email <input id='email' type="email" name='email' placeholder='Enter your email' pattern='[a-z]{0-9}'required/></label>
       <!--Age Label-->
       <label id='number-label'>Age (optional) <input id='number' type='number' name='age' placeholder='Enter your age' pattern='{0-9}' min='16' max='120'/></label>
+      
       <!--Dropdown Menu-->
-      <label id="dropdown-title">  What is your favourite feature of freeCodeCamp?</p>
+      <p id="dropdown-title">  What is your favourite feature of freeCodeCamp?</p>
       <select id='dropdown'>
           <option>Select an option</option>
           <option>Projects</option>
@@ -29,7 +40,7 @@
     </label>
 
       <!--Radio Button Menu-->
-      <label id="radio-title">Would you recommend freeCodeCamp to a friend?</label>
+      <p id="radio-title">Would you recommend freeCodeCamp to a friend?</p>
       <label><input type='radio' name='radio' value='answer'> Definitely</label>
       <label><input type='radio' name='radio' value='answer'> Maybe</label>
       <label><input type='radio' name='radio' value='answer'> Not sure</label>
@@ -43,7 +54,10 @@
 
       <label id="textarea-title">Any further comments or suggestions? <textarea placeholder='Additional comments'></textarea></label>
 
+    <!--Submit Button-->
       <label id="submit-button"> <input id="submit" type='submit'></label>
+  </div>
     </form>
+  <!--</div>-->
   </body>
 </html>

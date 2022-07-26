@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel=stylesheet href='/styles.css'>
+  </head>
+  <body>
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <h3 id='description'>Thank you for taking the time to help us improve this platform.</h3>
+<!--Form-->
+    <form id='survey-form'>
+      <!--Name Label-->
+      <label id='name-label'>Name
+        <input id='name' type="text" name='first-name' placeholder='Enter your name'required/>
+      </label>
+      <!--Email Label-->
+      <label id='email-label'>Email <input id='email' type="email" name='email' placeholder='Enter your email' pattern='[a-z]{0-9}'required/></label>
+      <!--Age Label-->
+      <label id='number-label'>Age (optional) <input id='number' type='number' name='age' placeholder='Enter your age' pattern='{0-9}' min='16' max='120'/></label>
+      <!--Dropdown Menu-->
+      <label id="dropdown-title">  What is your favourite feature of freeCodeCamp?</p>
+      <select id='dropdown'>
+          <option>Select an option</option>
+          <option>Projects</option>
+          <option>Challenges</option>
+          <option>Community</option>
+          <option>Open Source</option>
+      </select>
+    </label>
+
+      <!--Radio Button Menu-->
+      <label id="radio-title">Would you recommend freeCodeCamp to a friend?</label>
+      <label><input type='radio' name='radio' value='answer'> Definitely</label>
+      <label><input type='radio' name='radio' value='answer'> Maybe</label>
+      <label><input type='radio' name='radio' value='answer'> Not sure</label>
+      
+      <!--Checkbox Menu-->
+      <label id="checkbox-title">What would you see improved? (Check all that apply)</label>
+      <label><input type='checkbox' value='attribute'>Front-end projects</label>
+      <label><input type='checkbox' value='attribute'>Back-end projects</label>
+      <label><input type='checkbox' value='attribute'>Data Visulisation</label>
+      <label><input type='checkbox' value='attribute'>Challenges</label>
+
+      <label id="textarea-title">Any further comments or suggestions? <textarea placeholder='Additional comments'></textarea></label>
+
+      <label id="submit-button"> <input id="submit" type='submit'></label>
+    </form>
+  </body>
+</html>

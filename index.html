@@ -14,21 +14,29 @@
 <!--The HTML below is where I think the issue is, I started this project on myFreeCodeCamp and at the time they wanted me to have id selectors for both
 the label and the input tags. I feel these selectors might be conflicting?-->
   
-    <!--Flex Wrapper
-  <div id="wrapper">-->
+    <!--Flex Wrapper-->
+  <!--<div id="wrapper">-->
 
     <!--Form-->
     <form id='survey-form'>
       <!--Name Label-->
-      <label for="name">Name
-        <input id='name' type="text" name='first-name' placeholder='Enter your name'required/>
+      <div class="flex-one">
+        <fieldset id="help">
+      <label id='label-name' for="name">Name
+        <input id='first-input' type="text" name='first-name' placeholder='Enter your name'required/>
       </label>
       <!--Email Label-->
-      <label for="name">Email <input id='email' type="email" name='email' placeholder='Enter your email' pattern='[a-z]{0-9}'required/></label>
+      <label id='label-mail' for="name">Email 
+        <input id='first-input' type="email" name='email' placeholder='Enter your email' pattern='[a-z]{0-9}'required/>
+      </label>
       <!--Age Label-->
-      <label for="name"'>Age (optional) <input id='number' type='number' name='age' placeholder='Enter your age' pattern='{0-9}' min='16' max='120'/></label>
+      <label id='label-age' for="name">Age (optional) 
+        <input id='first-input' type='number' name='age' placeholder='Enter your age' pattern='{0-9}' min='16' max='120'/>
+      </label>
+    </fieldset>
       
       <!--Dropdown Menu-->
+    
       <label id="dropdown-title">  What is your favourite feature of freeCodeCamp?
       <select id='dropdown'>
           <option>Select an option</option>
@@ -39,24 +47,30 @@ the label and the input tags. I feel these selectors might be conflicting?-->
       </select>
     </label>
 
+
       <!--Radio Button Menu-->
+    
       <p id="radio-title">Would you recommend freeCodeCamp to a friend?</p>
-      <label><input type='radio' name='radio' value='answer'> Definitely</label>
-      <label><input type='radio' name='radio' value='answer'> Maybe</label>
-      <label><input type='radio' name='radio' value='answer'> Not sure</label>
+      <label id="radio-label"><input id="radio-input" type='radio' name='radio' value='answer'> Definitely</label>
+      <label id="radio-label"><input id="radio-input" type='radio' name='radio' value='answer'> Maybe</label>
+      <label id="radio-label"><input id="radio-input" type='radio' name='radio' value='answer'> Not sure</label>
+        
+   <!--flex container end--> 
       
+   
       <!--Checkbox Menu-->
-      <label id="checkbox-title">What would you see improved? (Check all that apply)</label>
-      <label><input type='checkbox' value='attribute'>Front-end projects</label>
-      <label><input type='checkbox' value='attribute'>Back-end projects</label>
-      <label><input type='checkbox' value='attribute'>Data Visualisation</label>
-      <label><input type='checkbox' value='attribute'>Challenges</label>
+      <p id="checkbox-title">What would you see improved? (Check all that apply)</p>
+      <label> <input id="checkbox-input" type='checkbox' value='attribute'> Front-end projects</label>
+      <label> <input id="checkbox-input" type='checkbox' value='attribute'> Back-end projects</label>
+      <label> <input id="checkbox-input" type='checkbox' value='attribute'> Data Visualisation</label>
+      <label> <input id="checkbox-input" type='checkbox' value='attribute'> Challenges</label>
 
       <label id="textarea-title">Any further comments or suggestions? <textarea placeholder='Additional comments'></textarea></label>
 
     <!--Submit Button-->
       <label id="submit-button"> <input id="submit" type='submit'></label>
   </div>
+<!--Second flex container end--></div>
     </form>
   <!--</div>-->
   </body>

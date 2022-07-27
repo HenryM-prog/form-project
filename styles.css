@@ -3,7 +3,7 @@
 /*My successful attempt usinf display:block; to style my contact
 survey form */
 
-*, *::before, *::after {
+/* *, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -28,11 +28,16 @@ h1, h2{
     color: white;
 }
 
+div {
+    display: block;
+}
+
 label {
+    display: flex;
     color: white;
     padding: 10px;
     display: block;
-    margin: 0em auto;
+    margin-bottom: 0.5rem;
 }
 
 #name, #email, #number {
@@ -51,12 +56,12 @@ label {
 
 #dropdown {
     display: block;
+    min-width: 100%;
+    min-height: 40px;
     padding: 10px;
     font-size: 16px;
     border-radius: 0.2em;
     border: none;
-    min-width: 100%;
-    min-height: 40px;
     color: grey;
     margin-top: 10px;
 }
@@ -100,14 +105,14 @@ textarea {
 
 }
 
+ */
 
 
 
 
 
 
-
-/* My attempt at using Flexbox to style a survey form
+/* My attempt at using Flexbox to style a survey form*/
 * {
     margin: 0;
     padding: 0;
@@ -119,37 +124,126 @@ textarea {
 
 body {
     background-color: #383836;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+h1 {
+    margin: 40px;
 }
 
 h1, h2 {
     color: white;
     text-align: center;
-    margin: 10px;
 }
 
 
-Flex Wrapper
+
+
+/*Flex Wrapper*/
  #wrapper {
-    display: flex;
-    background-color: darkgrey;
-    max-width: 700px;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+    background-color: darkgrey; */
+    /* justify-content: center;
+    align-items: center; */
  }
 
-/* Form ID Selector
+/* Form ID Selector*/
  #survey-form {
-    flex: 1;
+
+
+
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto; */
+    /* max-width: 700px;
+    height: 100vh;
     font-size: 20px;
     font-weight: 400;
     color: white;
     border: none;
-    border-radius: 0.2em;
- }  */
- 
- 
+    border-radius: 0.2em; */
+ }  
 
+ .flex-one {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: rgb(62, 62, 62);
+
+ }
+
+#help {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0px;
+   
+ }
+
+ #label-name, #label-mail, #label-age {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 40px;
+    margin: 10px 0px;
+
+}
+
+#first-input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+#dropdown-title {
+    padding: 0px 0px;
+}
+
+#dropdown {
+    display: flex;
+    width: 100%;
+    min-height: 40px;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+#checkbox-title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+}
+
+#checkbox-label, #checkbox-input {
+    padding: 20px;
+    margin-top: 10px;
+    
+}
+
+#radio-title {
+    padding: 20px 0px;
+    margin-top: 40px;
+}
+
+#radio-label {
+    padding: 5px 0px;
+}
+
+
+
+
+
+ 
+ 
+ 
  
     

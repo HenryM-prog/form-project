@@ -172,8 +172,8 @@ h1, h2 {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 40px;
-    height: auto;
     max-width: 800px;
+    height: auto;
     margin: 40px auto;
     background-color: rgb(62, 62, 62);
 
